@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Student.StudentMcqsScreen">
+   <children>
+      <Label fx:id="SubjectLabel" layoutX="329.0" layoutY="49.0" prefHeight="32.0" prefWidth="209.0" text="Subj">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="397.0" layoutY="392.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button fx:id="NextBtn" layoutX="480.0" layoutY="392.0" mnemonicParsing="false" onAction="#Next" text="Next" />
+      <RadioButton layoutX="126.0" layoutY="166.0" mnemonicParsing="false" text="a.">
+         <toggleGroup>
+            <ToggleGroup fx:id="MyGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="125.0" layoutY="207.0" mnemonicParsing="false" text="b." toggleGroup="$MyGroup" />
+      <RadioButton layoutX="126.0" layoutY="253.0" mnemonicParsing="false" text="c." toggleGroup="$MyGroup" />
+      <RadioButton layoutX="126.0" layoutY="298.0" mnemonicParsing="false" text="d." toggleGroup="$MyGroup" />
+      <Label fx:id="McqBody" layoutX="126.0" layoutY="101.0" prefHeight="32.0" prefWidth="291.0" text="Body" />
+      <Label fx:id="McqOp1" layoutX="160.0" layoutY="165.0" prefHeight="20.0" prefWidth="625.0" text="Label" />
+      <Label fx:id="McqOp2" layoutX="161.0" layoutY="206.0" prefHeight="20.0" prefWidth="512.0" text="Label" />
+      <Label fx:id="McqOp3" layoutX="160.0" layoutY="252.0" prefHeight="17.0" prefWidth="223.0" text="Label" />
+      <Label fx:id="McqOp4" layoutX="161.0" layoutY="297.0" prefHeight="17.0" prefWidth="246.0" text="Label" />
+      <Label fx:id="McqRadioError" layoutX="149.0" layoutY="350.0" prefHeight="17.0" prefWidth="99.0" />
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+{
+    dark-primary-color: #616161;
+    default-primary-color: #809fff;
+    text-primary-color: #212121;
+    light-primary-color: #F5F5F5;
+    accent-color: #607D8B;
+    primary-text-color: #212121;
+    secondary-text-color: #1a53ff
+;
+    divider-color: #BDBDBD;
+}
+
+.root {
+    -fx-background-color: white;
+}
+
+.button {
+    -fx-font: 16px "Arial";
+    -fx-text-fill: white;
+    -fx-padding: 5;
+    -fx-background-color: secondary-text-color;
+    //-fx-effect: dropshadow(one-pass-box, black, 14, 0.0 , 6, 0);
+    -fx-background-radius: 8;
+}
+
+.label {
+   -fx-font-size: 20px; -fx-font-family:"Times New Roman";
+      -fx-font-weight: bold;
+    -fx-text-fill: secondary-text-color;
+    -fx-text-alignment: left;
+}
+
+.choice-box {
+    -fx-font: 16px "Arial";
+    -fx-text-fill: #616161;
+    -fx-text-alignment: left;
+    -fx-background-color: accent-color;
+}
+.list-view {
+    -fx-background-color: #809fff; -fx-text-fill: black;
+ -fx-border-style: solid;
+  -fx-border-color: #666666;
+  -fx-padding: 12px ;
+}
+.list-cell .label {
+  display: inline-block;
+  -fx-background: lightyellow;
+  -fx-background-color: -fx-background ;
+  -fx-background-radius: 30px;
+  -fx-border-radius: 20px;
+  -fx-border-width: 2px;
+  -fx-border-style: solid;
+  -fx-border-color: #666666;
+  -fx-padding: 12px ;
+   -fx-cell-size: 36 ;
+   -fx-font-size:20.0;
+}
+.list-cell:empty .label {
+  -fx-background-color: transparent;
+  -fx-border-width: 0px;
+}
+.list-cell:selected .label {
+    -fx-background: -fx-selection-bar ;
+}
+.list-cell{
+    -fx-font-size:20.0;
+}

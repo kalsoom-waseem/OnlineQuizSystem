@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Student.ResultScreen">
+   <children>
+      <Label layoutX="258.0" layoutY="51.0" prefHeight="17.0" prefWidth="85.0" text="Result">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="26.0" layoutY="111.0" prefHeight="256.0" prefWidth="435.0" stylesheets="@../Style.css">
+         <children>
+            <Label layoutX="23.0" layoutY="52.0" prefHeight="17.0" prefWidth="131.0" text="Total Marks:" />
+            <Label layoutX="23.0" layoutY="100.0" prefHeight="28.0" prefWidth="160.0" text="Obtained Marks" />
+            <Label layoutX="23.0" layoutY="146.0" prefHeight="28.0" prefWidth="160.0" text="Obtained %" />
+            <Label fx:id="TotalMarks" layoutX="171.0" layoutY="52.0" />
+            <Label fx:id="ObtainedMarks" layoutX="171.0" layoutY="104.0" />
+            <Label fx:id="Percentage" layoutX="171.0" layoutY="146.0" prefHeight="28.0" prefWidth="94.0" />
+         </children>
+      </Pane>
+      <Button fx:id="Finish" layoutX="258.0" layoutY="400.0" mnemonicParsing="false" onAction="#back" text="Finish" />
+   </children>
+</AnchorPane>

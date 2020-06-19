@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainScreen">
+   <children>
+      <Button layoutX="434.0" layoutY="246.0" mnemonicParsing="false" onAction="#teacherClick" prefHeight="40.0" prefWidth="96.0" text="Teacher" />
+      <Label alignment="CENTER" layoutX="336.0" layoutY="88.0" prefHeight="54.0" prefWidth="307.0" stylesheets="@Style.css" text="Online Quiz System">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="433.0" layoutY="180.0" mnemonicParsing="false" onAction="#studentClick" prefHeight="40.0" prefWidth="96.0" text="Student" />
+      <Button layoutX="434.0" layoutY="311.0" mnemonicParsing="false" onAction="#adminClick" prefHeight="40.0" prefWidth="96.0" text="Admin" />
+   </children>
+</AnchorPane>

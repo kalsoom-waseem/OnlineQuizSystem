@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="my_pane" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Admin.AdminMainScreen">
+   <children>
+      <TableView fx:id="studentsTable" layoutX="100.0" layoutY="68.0" prefHeight="380.0" prefWidth="405.0" styleClass="sample.User">
+
+      </TableView>
+      <TableView fx:id="teachersTable" layoutX="556.0" layoutY="68.0" prefHeight="380.0" prefWidth="405.0" styleClass="sample.User">
+        
+      </TableView>
+      <MenuButton fx:id="dropdown" layoutX="231.0" layoutY="470.0" mnemonicParsing="false" text="--SELECT--">
+      </MenuButton>
+      <TextField fx:id="Admin_name" layoutX="206.0" layoutY="513.0" promptText="name" />
+      <Label fx:id="username" layoutX="408.0" layoutY="470.0" prefHeight="25.0" prefWidth="143.0" />
+      <Label fx:id="password" layoutX="408.0" layoutY="500.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="78.0" layoutY="469.0" text="Add new User">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="96.0" layoutY="513.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button layoutX="254.0" layoutY="553.0" mnemonicParsing="false" onAction="#AddNewUser" text="Add" />
+      <Label fx:id="Admin_name_error" layoutX="321.0" layoutY="557.0" />
+      <TextField fx:id="Admin_extra" layoutX="368.0" layoutY="513.0" />
+      <Button layoutX="454.0" layoutY="553.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+   </children>
+</AnchorPane>
